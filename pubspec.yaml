@@ -1,0 +1,41 @@
+name: tipsy_text
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  lottie: ^3.3.2
+  google_sign_in: ^6.2.1
+  http: ^1.6.0
+  flutter_secure_storage: ^10.0.0
+  intl: ^0.20.2
+  image_picker: ^1.0.4
+  google_mobile_ads: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/generate.json
+    - assets/app_icon.png
+
+# 🚀 STANDALONE CONFIGURATION
+# To remove the white part, ensure 'app_icon.png' is a TRANSPARENT PNG.
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"
+  adaptive_icon_background: "#000000" # This fills the outer area with pure black
+  adaptive_icon_foreground: "assets/app_icon.png" # This is your logo
